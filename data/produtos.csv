@@ -1,0 +1,16 @@
+sku,nome,categoria,estoque_atual,estoque_minimo,custo_unitario,fornecedor
+P001,Chuteira Mercurial Vapor 17,Chuteira Campo,3,1,189.90,Fornecedor A
+P002,Chuteira Predator Accuracy,Chuteira Campo,5,2,219.90,Fornecedor B
+P003,Bola de Futebol Oficial,Bolas,20,10,149.90,Fornecedor C
+P004,Meiao Esportivo Nike,Acessorios,12,15,39.90,Fornecedor A
+P005,Caneleira Profissional,Acessorios,8,10,59.90,Fornecedor D
+P006,Luvas de Goleiro Adidas,Acessorios,4,5,129.90,Fornecedor B
+P007,Shorts de Treino Nike,Moda fitness,15,10,79.90,Fornecedor A
+P008,Camiseta Dry Fit Sport,Moda fitness,25,20,69.90,Fornecedor C
+P009,Joelheira Esportiva,Acessorios,6,8,49.90,Fornecedor D
+P010,Bola de Basquete Spalding,Bolas,10,5,199.90,Fornecedor E
+P011,Raquete de Tenis Wilson,Acessorios,7,5,299.90,Fornecedor F
+P012,Kit de Cordas para Pular,Acessorios,30,15,29.90,Fornecedor A
+P013,Tenis de Corrida Mizuno,Tenis,9,10,349.90,Fornecedor G
+P014,Mochila Esportiva Nike,Mochilas,12,8,159.90,Fornecedor B
+P015,Garrafa Termica 1L,Acessorios,18,12,49.90,Fornecedor C
