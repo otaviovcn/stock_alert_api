@@ -1,9 +1,9 @@
-# Stock Alert API — PoC de Análıse de Estoque
+# Stock Alert API — PoC de Análise de Estoque
 
-Microprojeto em Python para análıse de estoque e geraça͂o de alertas de reposiça͂o, desenvolvido como **Prova de Conceito (PoC)** para validar uma hipótese técnica em pequena escala, com escopo limitado, antes de investir na integraça͂o completa ao ERP principal. Eu fiz uma cópia parcial, pois o arquivo original está no modo private.
+Micro projeto em Python para análise de estoque e geração de alertas de reposição, desenvolvido como **Prova de Conceito (PoC)** para validar uma hipótese técnica em pequena escala, com escopo limitado, antes de investir na integração completa ao ERP principal. Eu fiz uma cópia parcial, pois o arquivo original está no modo private.
 
 > **Status:** Funcionalidades em Python ainda em desenvolvimento.  
-> Este projeto está na fila de prioridades de evoluça͂o do ERP, em fase inicial de validac̃a͂o técnica.
+> Este projeto está na fila de prioridades de evolução do ERP, em fase inicial de validação técnica.
 
 ## Objetivo da PoC
 
@@ -11,18 +11,18 @@ Demonstrar, de forma prática e objetiva, que é possível:
 
 - Ler dados de produtos a partir de um arquivo CSV;
 - Aplicar regras de negócio para identificar produtos abaixo do estoque mínimo;
-- Calcular valores de reposiça͂o e estoque parado;
+- Calcular valores de reposição e estoque parado;
 - Gerar um resumo estruturado em JSON;
 - Expor esses dados por meio de uma API REST simples.
 
-A PoC serve para validar a viabilidade técnica da análıse automatizada de estoque antes de integrar ao sistema principal, reduzindo riscos e permitindo ajustes de escopo com baixo custo.
+A PoC serve para validar a viabilidade técnica da análise automatizada de estoque antes de integrar ao sistema principal, reduzindo riscos e permitindo ajustes de escopo com baixo custo.
 
 ## Por Que Este Projeto Está Separado?
 
-Este repositóĺıı́o foi mantido em um projeto **separado e independente** do ERP principal por dois motivos:
+Este repositório foi mantido em um projeto **separado e independente** do ERP principal por dois motivos:
 
-1. **Proteça͂o de dados sensíveis:** o código e os dados deste projeto são fictı́cios e não contem informaço͂es reais de clientes, fornecedores, precos ou operac̃o͂es do negócio. Isso evita expor dados confidenciais em ambientes de teste e desenvolvimento. Eu fiz uma cópia parcial, pois o arquivo original está no modo private.
-2. **Foco na validaça͂o técnica:** manter a PoC isolada permite iterar rapidamente, testar hipóteses e ajustar o escopo sem impactar a base de código do ERP, que segue outro ciclo de prioridades e governança.
+1. **Proteção de dados sensíveis:** o código e os dados deste projeto são fictícios e não contem informações reais de clientes, fornecedores, preços ou operações do negócio. Isso evita expor dados confidenciais em ambientes de teste e desenvolvimento. Eu fiz uma cópia parcial, pois o arquivo original está no modo private.
+2. **Foco na validação técnica:** manter a PoC isolada permite iterar rapidamente, testar hipóteses e ajustar o escopo sem impactar a base de código do ERP, que segue outro ciclo de prioridades e governança.
 
 ## Estrutura do Projeto
 
@@ -43,14 +43,14 @@ stock_alert_api/
 ## Regras de Negócio
 
 - **Produto em risco:** `estoque_atual < estoque_minimo`
-- **Quantidade para reposiça͂o:** `max(0, estoque_minimo - estoque_atual)`
-- **Valor para reposiça͂o:** `qtd_reposicao * custo_unitario`
+- **Quantidade para reposição:** `max(0, estoque_minimo - estoque_atual)`
+- **Valor para reposição:** `qtd_reposicao * custo_unitario`
 - **Valor parado em estoque:** `estoque_atual * custo_unitario`
 - **Agrupamentos:** por categoria e por fornecedor (total parado, total a repor, itens em risco)
 
 ## Como Rodar
 
-### 1. Instalar dependencias
+### 1. Instalar dependências
 
 ```bash
 python -m pip install -r requirements.txt
@@ -106,16 +106,16 @@ python -m uvicorn api.app:app --reload
 
 ## Próximos Passos (Fila de Prioridades do ERP)
 
-Esta parte do projeto está em fase inicial e as funcionalidades em Python sera͂o evoluı́das conforme a fila de prioridades do ERP principal. Possı́veis melhorias futuras:
+Esta parte do projeto está em fase inicial e as funcionalidades em Python s serão evoluídas conforme a fila de prioridades do ERP principal. Possíveis melhorias futuras:
 
-- Agendamento de análıses (cron ou task scheduler);
-- Exportaça͂o de relatórios em PDF/Excel;
-- Integraça͂o com o módulo de estoque do ERP.
+- Agendamento de análises (cron ou task scheduler);
+- Exportação de relatórios em PDF/Excel;
+- Integração com o módulo de estoque do ERP.
 
 ## Sobre Este README
 
-Este README foi elaborado com auxílıo de inteligência artificial para acelerar a documentaça͂o, mantendo o foco na clareza e objetividade das informaço͂es técnicas.
+Este README foi elaborado com auxílio de inteligência artificial para acelerar a documentação, mantendo o foco na clareza e objetividade das informações técnicas.
 
-## Licenca
+## Licença
 
-Projeto desenvolvido para fins de estudo e validaça͂o técnica.
+Projeto desenvolvido para fins de estudo e validação técnica.
